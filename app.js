@@ -21,14 +21,16 @@ button.addEventListener("click", () => {
 
         div.innerHTML += `
         
-        <div class="main_div">
-        <img src="https:${res.current.condition.icon}">
-        <h1>${res.current.temp_c}°C</h1>
+        <div>
         
-        <h2> Country : ${res.location.country} </h2>
-        <h3> Name : ${res.location.name} </h3>
-        <h4>Humidity : ${res.current.humidity} %</h4>
-        <h5>Last Updated : ${res.current.last_updated}°C</h5>
+        <img src="https:${res.current.condition.icon}">
+        <h1 class="pad-left">${res.current.temp_c}°C</h1>
+
+        <h2><li> Country : ${res.location.country} </li></h2>
+        <h3><li> Name : ${res.location.name} </li></h3>
+        <h4><li> Humidity : ${res.current.humidity} % </li></h4>
+        <h5><li> Last Updated : ${res.current.last_updated}°C </li></h5>
+        
         </div>
         `
         
@@ -38,7 +40,7 @@ button.addEventListener("click", () => {
         div.innerHTML = `<h1>Correct your Spalling</h1>`
         div.innerHTML = `
         <div id="error-line">
-        <p><li>Error fetching data. Please try again ! But Check OR Focus on your spalling...</li></p>
+        <p><li>Error fetching data.<br /> <span class="mar-left">Please try again !</span> <br /> <span class="mar-left">But Check OR Focus on your spalling...</span></li></p>
         </div>
         `;        
     })

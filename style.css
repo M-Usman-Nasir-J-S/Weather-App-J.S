@@ -1,11 +1,14 @@
 /* 45deg */
 body{
-    background: linear-gradient(orangered,yellow);
+    /* background: linear-gradient(orangered,yellow); */
+    background-image: url(./Wheather_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: black;
 }
 
-.center{
-    text-align: center;
+.white{
+    color: white;
 }
 
 #head{
@@ -33,16 +36,24 @@ body{
     box-shadow: 1px 1px 5px #000;
 }
 
-.main_div{
-    text-align: center;
+.pad-left{
+    margin-left: 5%;
+}
+
+img{
+    margin-left: 6%;
 }
 
 img{
     width: 5%;
-    background-color: rgb(255, 219, 133);
+    background-color: rgb(226, 226, 226);
 }
 
 #error-line{
-    text-align: center;
     font-size: xx-large;
 }
+
+.mar-left{
+    margin-left: 3.3%;
+}
+
